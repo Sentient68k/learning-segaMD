@@ -139,14 +139,13 @@ CleanupInit:
 	movem.l (a0), d0-d7/a1-a7								; Multimove 0 to all regs
 	; Init status register (no trace, A7 is Interrupt Stack Pointer, no interrupts, clear condition code bits)
 	move 	#$2700, sr
-Main:
-	include 'vdp01.asm'
-	jmp 	Main											; Jump to the game code
 HBlankInterrupt:
 VBlankInterrupt:
    rte   ; Return from Exception
 Exception:
    rte   ; Return from Exception
+Main:
+	jmp 	__main											; Jump to the game code
 Z80Data:
 	dc.w $af01
 	dc.w $d91f
@@ -196,4 +195,3 @@ VDPRegisters:
 	dc.b $00 ; 21: DMA source address lo byte
 	dc.b $00 ; 22: DMA source address mid byte
 	dc.b $00 ; 23: DMA source address hi byte, memory-to-VRAM mode (bits 6-7)
-__end    ; Very last line, end of ROM address

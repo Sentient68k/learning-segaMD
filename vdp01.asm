@@ -1,6 +1,8 @@
 ; ******************************************************************
 ; VDP stuff
 ; ******************************************************************
+	include '.\init.asm'
+__main:
 	move.w 	#$8F02, $00C00004								; Auto Increment by 2 bytes
 	move.l 	#$40000003, $00C00004							; send VRAM write operation to VDP control address to let it know we are about to write data
 	move.l	#$C0000003, $00C00004							; Setup VDP to write CRAM Address $0000
@@ -36,3 +38,4 @@ CharacterH:
 	dc.l $11000110
 	dc.l $11000110
 	dc.l $00000000
+__end    ; Very last line, end of ROM address
