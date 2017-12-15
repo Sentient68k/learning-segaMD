@@ -1,7 +1,7 @@
+	include 'init.asm'
 ; ******************************************************************
 ; VDP stuff
 ; ******************************************************************
-	include '.\init.asm'
 __main:
 	move.w 	#$8F02, $00C00004								; Auto Increment by 2 bytes
 	move.l 	#$40000003, $00C00004							; send VRAM write operation to VDP control address to let it know we are about to write data

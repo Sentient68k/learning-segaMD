@@ -139,13 +139,13 @@ CleanupInit:
 	movem.l (a0), d0-d7/a1-a7								; Multimove 0 to all regs
 	; Init status register (no trace, A7 is Interrupt Stack Pointer, no interrupts, clear condition code bits)
 	move 	#$2700, sr
+Main:
+	jmp 	__main											; Jump to the game code
 HBlankInterrupt:
 VBlankInterrupt:
    rte   ; Return from Exception
 Exception:
    rte   ; Return from Exception
-Main:
-	jmp 	__main											; Jump to the game code
 Z80Data:
 	dc.w $af01
 	dc.w $d91f
