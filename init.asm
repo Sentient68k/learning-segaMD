@@ -86,9 +86,9 @@
 	dc.b "JUE             "                                 ; Country codes
 EntryPoint:													; Entry point. Start program here.
 	tst.w	$00A10008										; Test internal reset(?)
-	bne		Palette											; Branch if not 0 to Main
+	bne		Main											; Branch if not 0 to Main
 	tst.w	$00A1000C										; Test reset button
-	bne		Palette											; Branch if not 0 to Main
+	bne		Main											; Branch if not 0 to Main
 	move.l 	#$00000000, d0									; Place 0 into d0, prepped for RAM clear
 	move.l 	#$00000000, a0 									; Start from address $0, clear backwards
 	move.l 	#$00003FFF, d1 									; Clear 64k of longwords, -1 for 0 index loop to work

@@ -35,7 +35,7 @@ __main:
 	move.w #$0006, $00C00000     ; Pattern ID 6 - R
 	move.w #$0003, $00C00000     ; Pattern ID 3 - L
 	move.w #$0007, $00C00000     ; Pattern ID 7 - D
-	;jmp 	__main
+	jmp 	__main
 Palette:
 	dc.w $0000 ; Colour 0 - Transparent
 	dc.w $000E ; Colour 1 - Red
@@ -63,7 +63,7 @@ CharacterH:
 	dc.l $11000110
 	dc.l $00000000
 Characters:
-	dc.l $11000110 ; Character 0 - H
+	dc.l $99000990 ; Character 0 - H
 	dc.l $11000110
 	dc.l $11000110
 	dc.l $11111110
