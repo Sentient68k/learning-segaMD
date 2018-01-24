@@ -35,7 +35,7 @@ DrawTextPlaneA:
 	add.l 	#vdp_write_plane_a, d3 	; Add PlaneA write cmd + address
 	move.l 	d3, vdp_control	; Send to VDP control port
 
-	move.l 	#$00000000, d3		; Clear d3 ready to work with again
+	clr.l 	d3		; Clear d3 ready to work with again
 	move.b 	d2, d3 	; Move palette ID (lower bytes of d2) to d3
 	rol.l  	#$8, d3	; Shift palette ID bits 14 and 15 of d3
 	rol.l 	#$5, d3	; Can only rol 8 bites in one instruction

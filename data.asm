@@ -69,9 +69,19 @@ Palettes:
 	dc.w $0000
 
 	; Align 8 bytes
-	;nop 0,8
+	nop 0,8
 
-PixelFont:	; Font start address
+PixelFont: ; Font start address
+
+	dc.l	$00000000
+	dc.l	$00000000
+	dc.l	$00000000
+	dc.l	$00000000
+	dc.l	$00000000
+	dc.l	$00000000
+	dc.l	$00000000
+	dc.l	$00000000
+
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10111010
@@ -80,8 +90,7 @@ PixelFont:	; Font start address
 	dc.l	$10101010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111100
 	dc.l	$10000110
 	dc.l	$10111010
@@ -90,8 +99,7 @@ PixelFont:	; Font start address
 	dc.l	$10000110
 	dc.l	$11111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111110
 	dc.l	$11000010
 	dc.l	$10111110
@@ -100,8 +108,7 @@ PixelFont:	; Font start address
 	dc.l	$11000010
 	dc.l	$01111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111100
 	dc.l	$10000110
 	dc.l	$10111010
@@ -110,8 +117,7 @@ PixelFont:	; Font start address
 	dc.l	$10000110
 	dc.l	$11111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$10111110
@@ -120,8 +126,7 @@ PixelFont:	; Font start address
 	dc.l	$10000010
 	dc.l	$11111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$10111110
@@ -130,8 +135,7 @@ PixelFont:	; Font start address
 	dc.l	$10100000
 	dc.l	$11100000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111110
 	dc.l	$11000010
 	dc.l	$10111110
@@ -140,8 +144,7 @@ PixelFont:	; Font start address
 	dc.l	$11000010
 	dc.l	$01111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10101010
 	dc.l	$10111010
@@ -150,8 +153,7 @@ PixelFont:	; Font start address
 	dc.l	$10101010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$11101110
@@ -160,8 +162,7 @@ PixelFont:	; Font start address
 	dc.l	$10000010
 	dc.l	$11111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$00001110
 	dc.l	$00001010
 	dc.l	$00001010
@@ -170,8 +171,7 @@ PixelFont:	; Font start address
 	dc.l	$11000110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10111010
 	dc.l	$10110110
@@ -181,7 +181,6 @@ PixelFont:	; Font start address
 	dc.l	$11101110
 	dc.l	$00000000
 
-* --------------------------
 	dc.l	$11100000
 	dc.l	$10100000
 	dc.l	$10100000
@@ -190,8 +189,7 @@ PixelFont:	; Font start address
 	dc.l	$10000010
 	dc.l	$11111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10111010
 	dc.l	$10010010
@@ -200,8 +198,7 @@ PixelFont:	; Font start address
 	dc.l	$10101010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10111010
 	dc.l	$10011010
@@ -210,8 +207,7 @@ PixelFont:	; Font start address
 	dc.l	$10111010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10111010
@@ -220,8 +216,7 @@ PixelFont:	; Font start address
 	dc.l	$11000110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111100
 	dc.l	$10000110
 	dc.l	$10111010
@@ -230,8 +225,7 @@ PixelFont:	; Font start address
 	dc.l	$10100000
 	dc.l	$11100000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10111010
@@ -240,8 +234,7 @@ PixelFont:	; Font start address
 	dc.l	$11001010
 	dc.l	$01111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111100
 	dc.l	$10000110
 	dc.l	$10111010
@@ -250,8 +243,7 @@ PixelFont:	; Font start address
 	dc.l	$10111010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111110
 	dc.l	$11000010
 	dc.l	$10111110
@@ -260,8 +252,7 @@ PixelFont:	; Font start address
 	dc.l	$10000110
 	dc.l	$11111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$11101110
@@ -270,8 +261,7 @@ PixelFont:	; Font start address
 	dc.l	$00101000
 	dc.l	$00111000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10101010
 	dc.l	$10101010
@@ -280,8 +270,7 @@ PixelFont:	; Font start address
 	dc.l	$11000110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10101010
 	dc.l	$10111010
@@ -290,8 +279,7 @@ PixelFont:	; Font start address
 	dc.l	$01101100
 	dc.l	$00111000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10101010
 	dc.l	$10111010
@@ -300,8 +288,7 @@ PixelFont:	; Font start address
 	dc.l	$10111010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10111010
 	dc.l	$11010110
@@ -310,8 +297,7 @@ PixelFont:	; Font start address
 	dc.l	$10111010
 	dc.l	$11101110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10111010
 	dc.l	$11010110
@@ -320,8 +306,7 @@ PixelFont:	; Font start address
 	dc.l	$00101000
 	dc.l	$00111000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$11110110
@@ -330,8 +315,7 @@ PixelFont:	; Font start address
 	dc.l	$10000010
 	dc.l	$11111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10110010
@@ -340,18 +324,16 @@ PixelFont:	; Font start address
 	dc.l	$11000110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
-	dc.l	$00111100
-	dc.l	$00100100
-	dc.l	$00110100
-	dc.l	$00010100
-	dc.l	$00110110
-	dc.l	$00100010
-	dc.l	$00111110
+	
+	dc.l	$01111000
+	dc.l	$01001000
+	dc.l	$01101000
+	dc.l	$00101000
+	dc.l	$01101100
+	dc.l	$01000100
+	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111100
 	dc.l	$10000110
 	dc.l	$11111010
@@ -360,8 +342,7 @@ PixelFont:	; Font start address
 	dc.l	$10000010
 	dc.l	$11111110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111100
 	dc.l	$10000110
 	dc.l	$11111010
@@ -370,8 +351,7 @@ PixelFont:	; Font start address
 	dc.l	$10000110
 	dc.l	$11111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11101110
 	dc.l	$10101010
 	dc.l	$10111010
@@ -380,8 +360,7 @@ PixelFont:	; Font start address
 	dc.l	$00001010
 	dc.l	$00001110
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$10111110
@@ -390,8 +369,7 @@ PixelFont:	; Font start address
 	dc.l	$10000110
 	dc.l	$11111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000100
 	dc.l	$10111100
@@ -400,8 +378,7 @@ PixelFont:	; Font start address
 	dc.l	$11000110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111110
 	dc.l	$10000010
 	dc.l	$11111010
@@ -410,8 +387,7 @@ PixelFont:	; Font start address
 	dc.l	$01011000
 	dc.l	$01110000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10111010
@@ -420,8 +396,7 @@ PixelFont:	; Font start address
 	dc.l	$11000110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10111010
@@ -431,37 +406,6 @@ PixelFont:	; Font start address
 	dc.l	$01111100
 	dc.l	$00000000
 
-* --------------------------
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-
-* --------------------------
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-
-* --------------------------
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-	dc.l	$00000000
-
-* --------------------------
 	dc.l	$00000000
 	dc.l	$00000000
 	dc.l	$00000000
@@ -470,8 +414,7 @@ PixelFont:	; Font start address
 	dc.l	$11000000
 	dc.l	$11000000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$00000000
 	dc.l	$00000000
 	dc.l	$00000000
@@ -480,8 +423,7 @@ PixelFont:	; Font start address
 	dc.l	$10100000
 	dc.l	$10100000
 	dc.l	$11100000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11000110
 	dc.l	$10111010
@@ -490,8 +432,7 @@ PixelFont:	; Font start address
 	dc.l	$00101000
 	dc.l	$00111000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11100000
 	dc.l	$10100000
 	dc.l	$10100000
@@ -500,28 +441,25 @@ PixelFont:	; Font start address
 	dc.l	$10100000
 	dc.l	$11100000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01110000
 	dc.l	$11010000
+	dc.l	$10110000
 	dc.l	$10100000
-	dc.l	$10100000
-	dc.l	$10100000
+	dc.l	$10110000
 	dc.l	$11010000
 	dc.l	$01110000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11100000
 	dc.l	$10110000
+	dc.l	$11010000
 	dc.l	$01010000
-	dc.l	$01010000
-	dc.l	$01010000
+	dc.l	$11010000
 	dc.l	$10110000
 	dc.l	$11100000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11111000
 	dc.l	$10101000
 	dc.l	$10101000
@@ -530,8 +468,7 @@ PixelFont:	; Font start address
 	dc.l	$00000000
 	dc.l	$00000000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$11100000
 	dc.l	$10100000
 	dc.l	$10100000
@@ -540,8 +477,7 @@ PixelFont:	; Font start address
 	dc.l	$00000000
 	dc.l	$00000000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$00000000
 	dc.l	$11100000
 	dc.l	$10100000
@@ -550,8 +486,7 @@ PixelFont:	; Font start address
 	dc.l	$11100000
 	dc.l	$00000000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$01111100
 	dc.l	$11010110
 	dc.l	$10000010
@@ -560,8 +495,7 @@ PixelFont:	; Font start address
 	dc.l	$11010110
 	dc.l	$01111100
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$00111000
 	dc.l	$00101000
 	dc.l	$11101110
@@ -570,8 +504,7 @@ PixelFont:	; Font start address
 	dc.l	$00101000
 	dc.l	$00111000
 	dc.l	$00000000
-
-* --------------------------
+	
 	dc.l	$00000000
 	dc.l	$00000000
 	dc.l	$11111110
@@ -580,28 +513,25 @@ PixelFont:	; Font start address
 	dc.l	$00000000
 	dc.l	$00000000
 	dc.l	$00000000
-
-* --------------------------
-	dc.l	$00001100
-	dc.l	$00010100
-	dc.l	$00101000
-	dc.l	$01010000
-	dc.l	$10100000
-	dc.l	$11000000
+	
+	dc.l	$00011100
+	dc.l	$00110100
+	dc.l	$01101100
+	dc.l	$11011000
+	dc.l	$10110000
+	dc.l	$11100000
 	dc.l	$00000000
 	dc.l	$00000000
 
-* --------------------------
-PixelFontEnd	;Font end address
-PixelFontSizeB:	equ	(PixelFontEnd-PixelFont)	;Font size in bytes
-PixelFontSizeW:	equ	(PixelFontSizeB/2)		;Font size in words
-PixelFontSizeL:	equ	(PixelFontSizeB/2)		;Font size in longs
-PixelFontSizeT:	equ	(PixelFontSizeB/32)		;Font size in tiles
-PixelFontVRAM:	equ	$0100		;Dest address in VRAM 
-PixelFontTileID:	equ (PixelFontVRAM/32)		;ID of first tile
+PixelFontEnd                                 ; Font end address
+PixelFontSizeB: equ (PixelFontEnd-PixelFont) ; Font size in bytes
+PixelFontSizeW: equ (PixelFontSizeB/2)       ; Font size in words
+PixelFontSizeL: equ (PixelFontSizeB/4)       ; Font size in longs
+PixelFontSizeT: equ (PixelFontSizeB/32)      ; Font size in tiles
+PixelFontVRAM:  equ 0x0100                   ; Dest address in VRAM
+PixelFontTileID: equ (PixelFontVRAM/32)      ; ID of first tile
 
 ASCIIStart: equ $20 ; First ASCII code in table
- 
 ASCIIMap:
 	dc.b $00	; SPACE (ASCII code $20)
 	dc.b $28   ; ! Exclamation mark
@@ -662,4 +592,3 @@ ASCIIMap:
 	dc.b $18	; X
 	dc.b $19	; Y
 	dc.b $1A	; Z (ASCII code $5A)
-	

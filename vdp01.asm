@@ -62,6 +62,7 @@ __draw:
 	jsr	   DrawTextPlaneA	   ; Call draw text subroutine
  
  	jmp __draw
+
   ; Text strings (zero terminated)
 String1:
   dc.b "ABCDEFGHIJKLM",0
